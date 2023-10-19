@@ -428,6 +428,7 @@ A tener en cuenta:
 
 Poblar con datos iniciales
 --------------------------
+
 Para probar el correcto funcionamiento de nuestra aplicación de decide, hemos generado una serie de
 datos iniciales. Para ello, hemos elaborado un archivo JSON con datos que Django usa para generar 
 varias votaciones y usuarios de manera automática. Este se ha dotado con el nombre de "populate.json"
