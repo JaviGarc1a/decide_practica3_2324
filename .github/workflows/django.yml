@@ -1,6 +1,13 @@
 name: Python application
 
-on: [push]
+on:
+  push:
+     branches:
+	   - main
+  workflow_call:
+    secrets:
+      CODACY_PROJECT_TOKEN:
+        required: true
   
 
 jobs:
@@ -51,4 +58,5 @@ jobs:
       uses: codacy/codacy-coverage-reporter-action@v1
       with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          coverage-reports: decide/coverage.xml 
+          coverage-reports: decide/coverage.xml
+
